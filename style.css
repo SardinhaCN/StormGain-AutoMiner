@@ -1,0 +1,31 @@
+.container {
+    top: 50%;
+    left: 50%;
+    transform: translate(43%, 50%);
+}
+
+.toggle-button {
+    background: rgb(252, 0, 0);
+    width: 80px;
+    height: 40px;
+    border-radius: 30px;
+    padding: 5px;
+    transition: all 300ms ease-in-out;
+}
+
+.toggle-button>.inner-circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #fff;
+    transition: all 300ms ease-in-out;
+    transform: translate(-13%, -13%);
+}
+
+.toggle-button.active {
+    background: rgb(41, 255, 30);
+}
+
+.toggle-button.active>.inner-circle {
+    margin-left: 40px;
+}

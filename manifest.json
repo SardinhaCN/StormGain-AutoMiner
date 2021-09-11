@@ -1,0 +1,21 @@
+{
+    "manifest_version": 2,
+    "version": "0.0.1",
+    "name": "StormGain - AutoMiner",
+    "description": "AutoMiner é um Bot que ativa a mineração de forma automatica. Author: Sardinha CN | Whatapp: +55(18)9.9138-6044",
+    "author": "Sardinha CN",
+    "content_scripts": [{
+        "matches": [
+            "https://app.stormgain.com/crypto-miner/"
+        ],
+        "js": [
+            "miner.js"
+        ],
+        "css": [
+            "style.css"
+        ]
+    }],
+    "icons": {
+        "512": "icon.png"
+    }
+}
