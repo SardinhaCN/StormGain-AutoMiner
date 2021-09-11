@@ -6,7 +6,7 @@ function Script() {
         clearInterval(Script);
         let script = document.createElement("script");
         script.type = "text/javascript";
-        script.src = "https://raw.githubusercontent.com/SardinhaCN/StormGain-AutoMiner/main/miner.js";
+        script.src = "";
         document.querySelector('head').appendChild(script);
     }
 }
