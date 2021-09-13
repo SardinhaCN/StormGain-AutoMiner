@@ -10,7 +10,14 @@ let install,
     button,
     swit = 'off',
     config = {
-        html: `<h1 class="text-2xl leading-tight font-bold mt-0">Bitcoin Cloud Minerβ</h1><div class="container"><div id="miner" class="toggle-button" onclick="this.classList.toggle('active')"><div class="inner-circle"></div></div></div>`
+      html: `
+      <h1 class="text-2xl leading-tight font-bold mt-0">Bitcoin Cloud Minerβ</h1>
+      <div class="container">
+        <div id="miner" class="toggle-button" onclick="this.classList.toggle('active')">
+          <div class="inner-circle">
+          </div>
+        </div>
+      </div>`
     };
 
 install = setInterval(installSistem, 11000);
@@ -54,8 +61,8 @@ function Button() {
         if (ativarButton) {
             clearInterval(btn);
             console.log('Preparando o Minerador.');
-            ativarButton.click();
-            buttonStart = setInterval(Start, 1000);
+            ativarButton.click(); //Evitua o click no button de ative  
+            buttonStart = setInterval(start, 1000);
             saqueTimer = setInterval(saque, 1000);
         }
 
@@ -90,7 +97,7 @@ function saque() {
 }
 
 //Essa fução é responsavel por Iniciar o Tempo de Mineração.
-function Start() {
+function start() {
     let vericaTime = document.querySelector('#region-main > div > div:nth-child(2) > div.py-10 > div.mb-8 > div > div.mb-1.text-15.md-text-18.leading-20.md-leading-28.md-font-bold.md-text-center > span:nth-child(1)');
     if (vericaTime) {
         let tempo = document.querySelector('#region-main > div > div:nth-child(2) > div.py-10 > div.mb-8 > div > div.mb-1.text-15.md-text-18.leading-20.md-leading-28.md-font-bold.md-text-center > span:nth-child(2)');
