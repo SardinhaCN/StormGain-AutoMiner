@@ -74,7 +74,6 @@ function Button() {
     }
   } else {
     clearInterval(btn);
-    clearInterval(saqueTimer);
     saqueButton = document.querySelector('#region-main > div > div:nth-child(2) > div.py-10 > div.env > div > div > div.mt-3.pt-3.text-center.border-0.border-t.border-solid.md-border-0.border-gray-1.border-opacity-10 > button');
     console.log(`Evetuando o Saque. Valor: ${saqueMoney[1]}`);
     saqueButton.click(); //Evitua o click no button de saque.
