@@ -61,7 +61,7 @@ function Button() {
         if (ativarButton) {
             clearInterval(btn);
             console.log('Preparando o Minerador.');
-            ativarButton.click(); //Evitua o click no button de ative  
+            ativarButton.click(); //Evitua o click no button de mineração.
             buttonStart = setInterval(start, 1000);
             saqueTimer = setInterval(saque, 1000);
         }
@@ -77,8 +77,8 @@ function Button() {
         clearInterval(btn);
         clearInterval(saqueTimer);
         saqueButton = document.querySelector('#region-main > div > div:nth-child(2) > div.py-10 > div.env > div > div > div.mt-3.pt-3.text-center.border-0.border-t.border-solid.md-border-0.border-gray-1.border-opacity-10 > button');
-        console.log(`Executando o Saque, Valor: ${saqueMoney[0]}.${saqueMoney[1]} de saque.`);
-        saqueButton.click();
+        console.log(`Evetuando o Saque. Valor: ${saqueMoney[0]}.${saqueMoney[1]}`);
+        saqueButton.click(); //Evitua o click no button de saque.
         btn = setInterval(Button, 5000);
         saqueTimer = setInterval(saque, 5000);
     }
@@ -87,12 +87,11 @@ function Button() {
 //Essa fução é responsavel por sacar os $10.00.
 function saque() {
     let saqueValor = document.querySelector('#region-main > div > div:nth-child(2) > div.py-10 > div.env > div > div > div:nth-child(2) > div.text-gray-1.text-13.md-text-15.leading-4.md-leading-24.text-center > span:nth-child(1)');
-    let saqueMoney = saqueValor.outerText.split('.');
-    if (`${saqueMoney[0]}.${saqueMoney[1]}` === '≈10.00') {
-        return saqueBooleana = 'true';
+    let saqueMoney = saqueValor.outerText.split('≈');
+    if (`${saqueMoney[0]}.${saqueMoney[1]}` === '10.00') { //Detecta se esta na hora de evetuar o saque.
+        return saqueMoney, saqueBooleana = 'true';
     } else {
         return saqueBooleana = 'false';
-
     }
 }
 
