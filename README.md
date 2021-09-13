@@ -6,7 +6,8 @@
 
 <h3>Instalação</h3>
 
-* Primeiro baixe o zip da extesão no seu pc.
+* Primeiro baixe o zip da extesão no seu pc. 
+* Link de dowload: https://github.com/SardinhaCN/StormGain-AutoMiner/archive/refs/heads/main.zip
 * extraia os arquivos em uma pasta com o nome 'AutoMiner'.
 * delete o zip.
 
