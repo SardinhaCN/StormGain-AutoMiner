@@ -29,8 +29,6 @@ function installSistem() {
     console.log('Sistema do AutoMiner Instalado.')
     clearInterval(install);
 
-    saqueTimer = setInterval(saque, 10000);
-
     //Aqui ele esta instalando o html do Switch-liga/desliga no site.
     document.querySelector("#region-main > div > div:nth-child(2) > div.py-10 > div:nth-child(1) > div").innerHTML = config.html;
 
