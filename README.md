@@ -16,8 +16,11 @@
 
 ![Sem título(1)](https://user-images.githubusercontent.com/50783766/133022231-04aa522e-81e3-45ad-8516-ddbc4d594eb5.png)
 
+|==============================================================================|
 
-* Para o Microsoft Edge entre nesse link: edge://extensions/
+* No Microsoft Edge é a mesma coisa.
+
+* No Microsoft Edge entre nesse link: edge://extensions/
 
 * Ative o `Modo de desenvolvedor` iqual na imagem.
 
