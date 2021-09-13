@@ -2,4 +2,4 @@
 
 *AutoMiner é um Script de automatização, feito só para usar no site StormGain na pagina de mineração.*
 
-***`Essa é um projeto inicial, que ainda esta na faze beta, com forme os testes, vou trazer atualizações.`***
+***`⚠️Essa é um projeto inicial, que ainda esta na faze beta, com forme os testes, vou trazer atualizações.⚠️`***
