@@ -16,7 +16,7 @@
 
 ![Sem título(1)](https://user-images.githubusercontent.com/50783766/133022231-04aa522e-81e3-45ad-8516-ddbc4d594eb5.png)
 
-|==============================================================================|
+===
 
 * No Microsoft Edge é a mesma coisa.
 
